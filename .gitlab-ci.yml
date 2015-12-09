@@ -11,4 +11,3 @@ deploy:
   script:
     - rm -f ${DEPLOY_DOC_PATH}/${CI_BUILD_REF_NAME}/*
     - cp *.md ${DEPLOY_DOC_PATH}/${CI_BUILD_REF_NAME}
-  allow_failure: true
