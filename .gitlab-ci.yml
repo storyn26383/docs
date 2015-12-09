@@ -9,6 +9,6 @@ deploy:
     - '5.0'
     - '5.1'
   script:
-    - rm ${DEPLOY_DOC_PATH}/${CI_BUILD_REF_NAME}/*
+    - rm -f ${DEPLOY_DOC_PATH}/${CI_BUILD_REF_NAME}/*
     - cp . ${DEPLOY_DOC_PATH}/${CI_BUILD_REF_NAME}
   allow_failure: true
